@@ -38,11 +38,11 @@ app.post("/", (req,res)=>{
 
     const jsonData = JSON.stringify(data)
 
-    const url = "https://us13.api.mailchimp.com/3.0/lists/aeff461ebe"
+    const url = "url list id"
 
     const options ={
         method: "POST",
-        auth: "ossai1:65eb50a2689f051df5f1663dd7c09c2b-us13"
+        auth: "ossai1:apikey"
     }
   const request =  https.request(url,options,(response)=>{
         response.on("data", (data)=>{
@@ -59,8 +59,3 @@ app.listen(3000,()=>{
     console.log("Server is listening on port 3000")
 })
 
-// api key
-//65eb50a2689f051df5f1663dd7c09c2b-us13
-
-//audience id
-//aeff461ebe
